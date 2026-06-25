@@ -34,9 +34,8 @@ export default function Home() {
             <div className={styles.heroRight}>
               <SpinningCircle text="  FEATURED  WORK  ↓  " size={110} />
               <div className={styles.portrait}>
-                {/* Replace div with <Image> when you have the photo */}
-                <span className={styles.portraitLabel}>B&W Portrait</span>
-              </div>
+  <img src="/images/portrait1.jpg" alt="Brittany Paul" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+</div>
             </div>
           </div>
         </section>
