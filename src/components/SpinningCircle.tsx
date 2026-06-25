@@ -14,7 +14,8 @@ export default function SpinningCircle({ text, size = 110, children }: Props) {
 
   return (
     <div className={styles.wrapper} style={{ width: size, height: size }}>
-      <div className={`${styles.ring} spin`} style={{ width: size, height: size }}>
+      {/* The ring div spins; each char is pre-rotated into position */}
+      <div className={styles.ring} style={{ width: size, height: size }}>
         {chars.map((char, i) => {
           const angle = (i / chars.length) * 360;
           return (

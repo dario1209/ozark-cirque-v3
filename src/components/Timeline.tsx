@@ -1,3 +1,6 @@
+"use client";
+
+import { useRef } from "react";
 import styles from "./Timeline.module.css";
 
 const ITEMS = [
@@ -34,9 +37,42 @@ const ITEMS = [
 ];
 
 export default function Timeline() {
+  const trackRef = useRef<HTMLDivElement>(null);
+  const isDragging = useRef(false);
+  const startX = useRef(0);
+  const scrollLeft = useRef(0);
+
+  const onMouseDown = (e: React.MouseEvent) => {
+    if (!trackRef.current) return;
+    isDragging.current = true;
+    startX.current = e.pageX - trackRef.current.offsetLeft;
+    scrollLeft.current = trackRef.current.scrollLeft;
+    trackRef.current.style.cursor = "grabbing";
+  };
+
+  const onMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging.current || !trackRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - trackRef.current.offsetLeft;
+    const walk = (x - startX.current) * 1.5;
+    trackRef.current.scrollLeft = scrollLeft.current - walk;
+  };
+
+  const onMouseUp = () => {
+    isDragging.current = false;
+    if (trackRef.current) trackRef.current.style.cursor = "grab";
+  };
+
   return (
     <section className={styles.section}>
-      <div className={`${styles.track} hide-scrollbar`}>
+      <div
+        ref={trackRef}
+        className={styles.track}
+        onMouseDown={onMouseDown}
+        onMouseMove={onMouseMove}
+        onMouseUp={onMouseUp}
+        onMouseLeave={onMouseUp}
+      >
         {ITEMS.map((item, i) => (
           <div key={i} className={styles.card}>
             <div className={styles.year}>{item.year}</div>

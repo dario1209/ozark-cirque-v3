@@ -13,13 +13,15 @@ const ITEMS = [
 ];
 
 export default function Marquee() {
+  // Double the items so the loop is seamless
   const doubled = [...ITEMS, ...ITEMS];
+  const doubledAlt = [...ITEMS.slice(4), ...ITEMS.slice(0, 4), ...ITEMS.slice(4), ...ITEMS.slice(0, 4)];
 
   return (
     <section className={styles.section}>
-      {/* Row 1 — left */}
+      {/* Row 1 — scrolls left */}
       <div className={styles.row}>
-        <div className={`${styles.track} marquee-left`}>
+        <div className={styles.trackLeft}>
           {doubled.map((item, i) => (
             <span key={i} className={styles.item}>
               {item}
@@ -28,10 +30,10 @@ export default function Marquee() {
         </div>
       </div>
 
-      {/* Row 2 — right */}
+      {/* Row 2 — scrolls right */}
       <div className={styles.row}>
-        <div className={`${styles.track} marquee-right`}>
-          {[...ITEMS.slice(4), ...ITEMS.slice(0, 4), ...ITEMS].map((item, i) => (
+        <div className={styles.trackRight}>
+          {doubledAlt.map((item, i) => (
             <span key={i} className={styles.item}>
               {item}
             </span>

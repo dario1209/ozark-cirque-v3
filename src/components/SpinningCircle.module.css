@@ -6,6 +6,12 @@
 .ring {
   position: absolute;
   inset: 0;
+  animation: spinCircle 10s linear infinite;
+}
+
+@keyframes spinCircle {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
 }
 
 .char {
@@ -33,4 +39,8 @@
 .arrow {
   font-size: 18px;
   color: var(--fg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ring { animation: none; }
 }
