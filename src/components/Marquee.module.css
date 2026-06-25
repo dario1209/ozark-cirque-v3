@@ -7,35 +7,27 @@
   flex-direction: column;
   gap: 8px;
 }
-
-.row {
-  overflow: hidden;
-}
-
+.row { overflow: hidden; }
 .trackLeft {
   display: flex;
   align-items: center;
   width: max-content;
   animation: marqueeLeft 22s linear infinite;
 }
-
 .trackRight {
   display: flex;
   align-items: center;
   width: max-content;
   animation: marqueeRight 28s linear infinite;
 }
-
 @keyframes marqueeLeft {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
 }
-
 @keyframes marqueeRight {
   from { transform: translateX(-50%); }
   to   { transform: translateX(0); }
 }
-
 .item {
   font-family: var(--condensed);
   font-size: clamp(56px, 9vw, 130px);
@@ -45,7 +37,6 @@
   padding: 0 24px;
   white-space: nowrap;
 }
-
 @media (prefers-reduced-motion: reduce) {
   .trackLeft, .trackRight { animation: none; }
 }

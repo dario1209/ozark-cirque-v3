@@ -1,23 +1,16 @@
-.wrapper {
-  position: relative;
-  flex-shrink: 0;
-}
-
+.wrapper { position: relative; flex-shrink: 0; }
 .ring {
   position: absolute;
   inset: 0;
   animation: spinCircle 10s linear infinite;
 }
-
 @keyframes spinCircle {
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }
 }
-
 .char {
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 50%; top: 50%;
   font-family: var(--sans);
   font-size: 9px;
   font-weight: 500;
@@ -27,20 +20,6 @@
   transform-origin: center;
   user-select: none;
 }
-
-.center {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.arrow {
-  font-size: 18px;
-  color: var(--fg);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .ring { animation: none; }
-}
+.center { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+.arrow { font-size: 18px; color: var(--fg); }
+@media (prefers-reduced-motion: reduce) { .ring { animation: none; } }
