@@ -22,7 +22,7 @@ export default function About() {
 
           {/* Text column */}
           <div className={styles.textCol}>
-            <h1 className={styles.name}>BRITTANY PAUL</h1>
+            <h1 className={styles.name}>OZARK CIRQUE</h1>
             <div className={styles.subtitle}>Art Direction</div>
 
             <div className={styles.bio}>
