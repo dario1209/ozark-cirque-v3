@@ -35,7 +35,7 @@ export default function Nav() {
         {/* Left: name + current page */}
         <div className={styles.left}>
           <Link href="/" className={styles.name}>
-            BRITTANY PAUL
+            OZARK CIRQUE
           </Link>
           {pageName() && (
             <>
