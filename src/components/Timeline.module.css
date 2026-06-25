@@ -1,0 +1,65 @@
+.section {
+  padding: 80px 0 80px 32px;
+}
+
+.track {
+  display: flex;
+  gap: 36px;
+  overflow-x: auto;
+  padding-right: 32px;
+  padding-bottom: 20px;
+  scroll-snap-type: x mandatory;
+  cursor: grab;
+}
+
+.track:active {
+  cursor: grabbing;
+}
+
+.card {
+  flex: 0 0 280px;
+  scroll-snap-align: start;
+}
+
+.year {
+  font-family: var(--serif);
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 400;
+  color: var(--fg);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.title {
+  font-family: var(--condensed);
+  font-size: 15px;
+  letter-spacing: 0.07em;
+  color: var(--fg);
+  margin-bottom: 16px;
+}
+
+.imgArea {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: var(--subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.imgLabel {
+  font-family: var(--sans);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  opacity: 0.5;
+}
+
+.desc {
+  font-family: var(--serif);
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--muted);
+}

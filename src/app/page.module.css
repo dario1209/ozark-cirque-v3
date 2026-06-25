@@ -1,0 +1,111 @@
+.hero {
+  padding: 100px 32px 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.heroName {
+  font-family: var(--condensed);
+  font-size: clamp(72px, 15vw, 210px);
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: 0.02em;
+  color: var(--fg);
+  margin: 0;
+}
+
+.heroBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 48px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.disciplines {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--serif);
+  font-size: clamp(22px, 3.5vw, 44px);
+  font-style: italic;
+  line-height: 1.35;
+  color: var(--fg);
+  gap: 0;
+}
+
+.heroRight {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  flex-shrink: 0;
+}
+
+.portrait {
+  width: clamp(220px, 28vw, 420px);
+  aspect-ratio: 3 / 4;
+  background: var(--subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.portraitLabel {
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  opacity: 0.5;
+}
+
+/* ── Bio teaser ── */
+.bioTeaser {
+  padding: 80px 32px;
+  border-top: 1px solid var(--subtle);
+}
+
+.bioTeaserInner {
+  max-width: 680px;
+}
+
+.bioText {
+  font-family: var(--serif);
+  font-size: clamp(18px, 2.5vw, 28px);
+  line-height: 1.5;
+  color: var(--fg);
+  margin-bottom: 32px;
+}
+
+.bioLink {
+  font-family: var(--condensed);
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  color: var(--fg);
+  text-decoration: none;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.bioLink:hover {
+  opacity: 1;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .heroBottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .heroRight {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .portrait {
+    width: 100%;
+  }
+}

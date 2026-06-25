@@ -1,0 +1,30 @@
+.section {
+  border-top: 1px solid var(--subtle);
+  border-bottom: 1px solid var(--subtle);
+  padding: 24px 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.row {
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  gap: 0;
+}
+
+.item {
+  font-family: var(--condensed);
+  font-size: clamp(56px, 9vw, 130px);
+  letter-spacing: 0.02em;
+  line-height: 1;
+  color: var(--fg);
+  padding: 0 24px;
+  white-space: nowrap;
+}

@@ -1,0 +1,153 @@
+.main {
+  padding: 100px 32px 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.titleRow {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-family: var(--condensed);
+  font-size: clamp(52px, 12vw, 180px);
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: 0.02em;
+  color: var(--fg);
+  margin: 0;
+}
+
+.spinnerWrapper {
+  position: absolute;
+  top: 0;
+  left: clamp(300px, 38%, 620px);
+  cursor: pointer;
+}
+
+.content {
+  position: relative;
+  min-height: 500px;
+}
+
+.left {
+  max-width: 460px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Meta */
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 60px;
+  font-family: var(--sans);
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.metaRow {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.metaKey {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  min-width: 110px;
+  flex-shrink: 0;
+}
+
+.metaVal {
+  color: var(--fg);
+}
+
+/* Project section */
+.projectSection {
+  margin-bottom: 60px;
+}
+
+.projectHeading {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(36px, 6vw, 64px);
+  color: var(--fg);
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.projectDesc {
+  font-family: var(--serif);
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--muted);
+  margin: 0;
+}
+
+.back {
+  font-family: var(--condensed);
+  font-size: 15px;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.back:hover {
+  color: var(--fg);
+}
+
+/* Scattered photos */
+.right {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.polaroidWrapper {
+  position: absolute;
+  pointer-events: all;
+}
+
+.polaroid {
+  padding: 10px 10px 40px;
+  background: #fff;
+  border: 1.5px solid #0a0a0a;
+  transition: transform 0.35s ease;
+}
+
+[data-theme="dark"] .polaroid {
+  background: #1a1a18;
+  border-color: #ededea;
+}
+
+.polaroid:hover {
+  transform: scale(1.04) !important;
+}
+
+.polaroidImg {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: var(--subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.polaroidLabel {
+  font-family: var(--sans);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  opacity: 0.5;
+}
+
+@media (max-width: 900px) {
+  .right { display: none; }
+  .spinnerWrapper { position: static; margin-top: 24px; }
+}
