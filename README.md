@@ -1,6 +1,6 @@
 # Ozark Cirque v3
 
-New website for Brittany Paul / Ozark Cirque — modeled after isadeburgh.com.
+New website for Brittany Paul / Ozark Cirque
 
 **Stack:** Next.js 14 App Router · TypeScript · CSS Modules  
 **Fonts:** Bebas Neue (condensed display) · Playfair Display (editorial serif) · Inter (body)  
