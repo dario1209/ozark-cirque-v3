@@ -43,12 +43,13 @@
 
 .portrait {
   width: clamp(220px, 28vw, 420px);
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 1 / 1;
   background: var(--subtle);
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  border-radius: 50%;
 }
 
 .portraitLabel {
