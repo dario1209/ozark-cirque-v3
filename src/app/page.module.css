@@ -43,7 +43,7 @@
 
 .portrait {
   width: clamp(220px, 28vw, 420px);
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 3/4;
   background: var(--subtle);
   display: flex;
   align-items: center;
