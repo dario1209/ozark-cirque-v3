@@ -69,9 +69,9 @@ export default function About() {
 
             <div className={styles.contact}>
               <div className={styles.contactLabel}>Get in touch</div>
-              <a href="mailto:hello@ozarkcirque.com" className={styles.email}>
-                hello@ozarkcirque.com
-              </a>
+              <a href="mailto:ozarkcirque@gmail.com" className={styles.email}>
+  ozarkcirque@gmail.com
+</a>
               <div className={styles.socials}>
                 <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className={styles.social}>
                   Instagram

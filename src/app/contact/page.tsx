@@ -12,18 +12,18 @@ export default function Contact() {
     <>
       <Nav />
       <main className={styles.main}>
-        <h1 className={styles.heading}>
-          LET&apos;S MAKE
-          <br />
-          SOMETHING.
-        </h1>
+      <h1 className={styles.heading}>
+  LET&apos;S CREATE
+  <br />
+  SOMETHING.
+</h1>
 
         <div className={styles.grid}>
           <div>
             <div className={styles.label}>Email</div>
-            <a href="mailto:hello@ozarkcirque.com" className={styles.emailLink}>
-              hello@ozarkcirque.com
-            </a>
+            <a href="mailto:ozarkcirque@gmail.com" className={styles.emailLink}>
+  ozarkcirque@gmail.com
+</a>
           </div>
 
           <div>

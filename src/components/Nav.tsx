@@ -47,9 +47,9 @@ export default function Nav() {
 
         {/* Right: get in touch + toggle + hamburger */}
         <div className={styles.right}>
-          <Link href="/contact" className={styles.getInTouch}>
-            →→ GET IN TOUCH
-          </Link>
+        <Link href="/contact" className={styles.getInTouch}>
+  → GET IN TOUCH
+</Link>
 
           <button
             onClick={toggle}
