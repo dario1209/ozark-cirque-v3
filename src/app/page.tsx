@@ -28,11 +28,11 @@ export default function Home() {
             {/* Illustration */}
 <div className={styles.heroRight}>
   <div className={styles.illustration}>
-    <img
-      src="/images/brittillu.png"
-      alt="Illustration of Brittany Paul"
-      style={{ width: "100%", height: "100%", objectFit: "cover" }}
-    />
+  <img
+  src="/images/brittillu.png"
+  alt="Illustration of Brittany Paul"
+  style={{ width: "100%", height: "100%", objectFit: "cover", transform: "scale(1.03)" }}
+/>
   </div>
 </div>
           </div>

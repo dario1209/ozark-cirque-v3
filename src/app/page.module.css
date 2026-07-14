@@ -57,7 +57,8 @@
 }
 
 .illustration {
-  width: clamp(110px, 14vw, 180px);
+  height: clamp(280px, 56vh, 620px);
+  width: auto;
   aspect-ratio: 600 / 820;
   display: flex;
   align-items: center;
