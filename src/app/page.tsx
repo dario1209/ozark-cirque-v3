@@ -17,24 +17,23 @@ export default function Home() {
           <h1 className={styles.heroName}>BRITTANY PAUL</h1>
 
           <div className={styles.heroBottom}>
-            {/* Disciplines */}
             <div className={styles.disciplines}>
               <span>Aerial Performance</span>
               <span>Circus Education</span>
               <span>Movement Research</span>
               <span>Creative Direction</span>
             </div>
+          </div>
 
-            {/* Illustration */}
-<div className={styles.heroRight}>
-  <div className={styles.illustration}>
-  <img
-  src="/images/brittillu.png"
-  alt="Illustration of Brittany Paul"
-  style={{ width: "100%", height: "100%", objectFit: "cover", transform: "scale(1.03)" }}
-/>
-  </div>
-</div>
+          {/* Illustration — absolutely positioned, doesn't affect layout flow */}
+          <div className={styles.heroRight}>
+            <div className={styles.illustration}>
+              <img
+                src="/images/brittillu.png"
+                alt="Illustration of Brittany Paul"
+                style={{ width: "100%", height: "100%", objectFit: "cover", transform: "scale(1.03)" }}
+              />
+            </div>
           </div>
         </section>
 
