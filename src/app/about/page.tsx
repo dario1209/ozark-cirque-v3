@@ -16,7 +16,11 @@ export default function About() {
           {/* Portrait column */}
           <div className={styles.portraitCol}>
             <div className={styles.portrait}>
-              <span className={styles.portraitLabel}>Portrait</span>
+              <img
+                src="/images/portrait1.jpg"
+                alt="Brittany Paul"
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              />
             </div>
           </div>
 

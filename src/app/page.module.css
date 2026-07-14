@@ -46,7 +46,7 @@
   flex-shrink: 0;
 }
 
-.portrait {
+.illustration {
   width: clamp(110px, 14vw, 180px);
   aspect-ratio: 3/4;
   background: var(--subtle);
@@ -54,10 +54,9 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border-radius: 50%;
 }
 
-.portraitLabel {
+.illustrationLabel {
   font-family: var(--sans);
   font-size: 10px;
   letter-spacing: 0.14em;
@@ -111,7 +110,7 @@
     width: 100%;
   }
 
-  .portrait {
+  .illustration {
     width: 100%;
   }
 }

@@ -26,12 +26,12 @@ export default function Home() {
               <span>Creative Direction</span>
             </div>
 
-            {/* Spinning circle + portrait */}
+            {/* Spinning circle + illustration */}
             <div className={styles.heroRight}>
               <SpinningCircle text="  FEATURED  WORK  ↓  " size={110} />
-              <div className={styles.portrait}>
-  <img src="/images/portrait1.jpg" alt="Brittany Paul" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-</div>
+              <div className={styles.illustration}>
+                <span className={styles.illustrationLabel}>Illustration</span>
+              </div>
             </div>
           </div>
         </section>
