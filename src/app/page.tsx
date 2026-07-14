@@ -26,11 +26,15 @@ export default function Home() {
             </div>
 
             {/* Illustration */}
-            <div className={styles.heroRight}>
-              <div className={styles.illustration}>
-                <span className={styles.illustrationLabel}>Illustration</span>
-              </div>
-            </div>
+<div className={styles.heroRight}>
+  <div className={styles.illustration}>
+    <img
+      src="/images/brittillu.png"
+      alt="Illustration of Brittany Paul"
+      style={{ width: "100%", height: "100%", objectFit: "cover" }}
+    />
+  </div>
+</div>
           </div>
         </section>
 

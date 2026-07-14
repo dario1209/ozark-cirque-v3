@@ -47,8 +47,7 @@
 
 .illustration {
   width: clamp(110px, 14vw, 180px);
-  aspect-ratio: 3/4;
-  background: var(--subtle);
+  aspect-ratio: 600 / 820;
   display: flex;
   align-items: center;
   justify-content: center;
