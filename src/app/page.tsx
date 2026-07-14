@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Nav />
 
-      <main>
+      <main className={styles.homeWrapper}>
         {/* ── HERO ── */}
         <section className={styles.hero}>
           <h1 className={styles.heroName}>BRITTANY PAUL</h1>

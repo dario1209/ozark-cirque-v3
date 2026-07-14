@@ -1,3 +1,14 @@
+:global(html:not([data-theme='dark'])) .homeWrapper {
+  --bg: #b99fe7;
+  --fg: #17101f;
+  --muted: #4a3d5c;
+  --subtle: #a688d9;
+}
+
+.homeWrapper {
+  background: var(--bg);
+}
+
 .hero {
   padding: 96px 32px 20px;
   max-width: 1400px;
@@ -46,10 +57,8 @@
 }
 
 .illustration {
-  height: clamp(220px, 42vh, 520px);
-  width: auto;
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
+  width: clamp(110px, 14vw, 180px);
+  aspect-ratio: 600 / 820;
   display: flex;
   align-items: center;
   justify-content: center;
