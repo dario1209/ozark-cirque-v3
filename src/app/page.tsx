@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import SpinningCircle from "@/components/SpinningCircle";
 import Marquee from "@/components/Marquee";
 import Timeline from "@/components/Timeline";
 import ScatteredPhotos from "@/components/ScatteredPhotos";
@@ -26,9 +25,8 @@ export default function Home() {
               <span>Creative Direction</span>
             </div>
 
-            {/* Spinning circle + illustration */}
+            {/* Illustration */}
             <div className={styles.heroRight}>
-              <SpinningCircle text="  FEATURED  WORK  ↓  " size={110} />
               <div className={styles.illustration}>
                 <span className={styles.illustrationLabel}>Illustration</span>
               </div>

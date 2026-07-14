@@ -41,13 +41,12 @@
 
 .heroRight {
   display: flex;
-  align-items: flex-start;
-  gap: 16px;
+  align-items: flex-end;
   flex-shrink: 0;
 }
 
 .illustration {
-  width: clamp(110px, 14vw, 180px);
+  width: clamp(220px, 30vw, 460px);
   aspect-ratio: 3/4;
   background: var(--subtle);
   display: flex;
