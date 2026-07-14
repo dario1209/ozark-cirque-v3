@@ -15,11 +15,7 @@ export default function Home() {
       <main>
         {/* ── HERO ── */}
         <section className={styles.hero}>
-          <h1 className={styles.heroName}>
-            BRITTANY
-            <br />
-            PAUL
-          </h1>
+          <h1 className={styles.heroName}>BRITTANY PAUL</h1>
 
           <div className={styles.heroBottom}>
             {/* Disciplines */}

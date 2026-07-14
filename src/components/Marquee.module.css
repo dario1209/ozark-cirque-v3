@@ -1,11 +1,11 @@
 .section {
   border-top: 1px solid var(--subtle);
   border-bottom: 1px solid var(--subtle);
-  padding: 24px 0;
+  padding: 14px 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
 }
 .row { overflow: hidden; }
 .trackLeft {
@@ -30,11 +30,11 @@
 }
 .item {
   font-family: var(--condensed);
-  font-size: clamp(56px, 9vw, 130px);
+  font-size: clamp(24px, 3.5vw, 48px);
   letter-spacing: 0.02em;
   line-height: 1;
   color: var(--fg);
-  padding: 0 24px;
+  padding: 0 16px;
   white-space: nowrap;
 }
 @media (prefers-reduced-motion: reduce) {
